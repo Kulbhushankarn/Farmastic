@@ -9,8 +9,6 @@ cffi==1.14.4
 chardet==3.0.4
 click==7.1.2
 cycler==0.10.0
-setuptools==0.7.3
-distribute==0.6.24
 dataclasses==0.6
 decorator==4.4.2
 defusedxml==0.6.0
