@@ -36,9 +36,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: python-app
-          path: |
-            . 
-            !venv/
+          path: app/app.py
+            
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,7 +51,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: python-app
-          path: .
+          path: app/app.py
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
